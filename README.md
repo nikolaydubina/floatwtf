@@ -1,6 +1,6 @@
 # float.. wait, what?
 
-`144.96 > 144.96`... but also `144.96 < 144.96`
+`144.96 > 144.96`... but it is not
 ```go
 package main
 
