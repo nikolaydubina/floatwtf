@@ -69,7 +69,6 @@ func main() {
 }
 ```
 
-`NaN` in map
 ```go
 package main
 
