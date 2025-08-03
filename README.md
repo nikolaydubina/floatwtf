@@ -66,6 +66,7 @@ import (
 func main() {
 	var x float64 = 1 / float64(9)
 	fmt.Println(x + x + x + x + x + x + x + x + x)
+	// Output: 1.0000000000000002
 }
 ```
 
