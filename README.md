@@ -1,7 +1,6 @@
 # float.. wait, what?
 
-`144.96`
-
+`144.96 > 144.96`... but also `144.96 < 144.96`
 ```go
 package main
 
@@ -15,7 +14,7 @@ func main() {
 }
 ```
 
-`0.1`
+`0.1 != 0.1`
 ```go
 package main
 
@@ -29,6 +28,7 @@ func main() {
 }
 ```
 
+`0.1 + 0.1 + 0.1 != 0.3`
 ```go
 package main
 
@@ -41,7 +41,7 @@ func main() {
 }
 ```
 
-Rounding on assignment
+Increment on assignment
 ```go
 package main
 
@@ -55,7 +55,21 @@ func main() {
 }
 ```
 
-`NaN`
+`9 * 1/9 != 1`
+```go
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+	var x float64 = 1 / float64(9)
+	fmt.Println(x + x + x + x + x + x + x + x + x)
+}
+```
+
+`NaN != NaN`
 ```go
 package main
 
@@ -69,6 +83,7 @@ func main() {
 }
 ```
 
+`NaN` is not in the map... and yet map is filled with `NaN`s
 ```go
 package main
 
