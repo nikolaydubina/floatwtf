@@ -83,7 +83,7 @@ func main() {
 }
 ```
 
-`NaN` is not in the map... and yet map is filled with `NaN`s
+`NaN` is not in the map... and yet map is filled with `NaN`
 ```go
 package main
 
