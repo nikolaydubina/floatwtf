@@ -41,20 +41,6 @@ func main() {
 }
 ```
 
-Increment on assignment
-```go
-package main
-
-import "fmt"
-
-func main() {
-	var fx float32 = 99999999
-	var ix int32 = int32(fx)
-	fmt.Println(ix)
-	// Output: 100000000
-}
-```
-
 `9 * 1/9 != 1`
 ```go
 package main
@@ -67,6 +53,20 @@ func main() {
 	var x float64 = 1 / float64(9)
 	fmt.Println(x + x + x + x + x + x + x + x + x)
 	// Output: 1.0000000000000002
+}
+```
+
+Increment on assignment
+```go
+package main
+
+import "fmt"
+
+func main() {
+	var fx float32 = 99999999
+	var ix int32 = int32(fx)
+	fmt.Println(ix)
+	// Output: 100000000
 }
 ```
 
