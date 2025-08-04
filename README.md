@@ -112,7 +112,7 @@ func main() {
 }
 ```
 
-`sin(𝜋) > 0` and no underflow occurs
+`sin(𝜋) > 0` yet no underflow occurs
 ```go
 package main
 
@@ -128,7 +128,7 @@ func main() {
 }
 ```
 
-`tan(𝜋/2) != +Inf` and no overflow occurs
+`tan(𝜋/2) != +Inf` yet no overflow occurs
 ```go
 package main
 
