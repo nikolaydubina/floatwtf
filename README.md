@@ -139,7 +139,7 @@ import (
 
 func main() {
 	x := math.Tan(math.Pi / 2)
-	fmt.Println(x, x == math.Inf(1), x > math.MaxFloat64)
-	// Output: 1.6331239353195392e+16 false false
+	fmt.Println(x, x == math.Inf(1), x < math.MaxFloat64)
+	// Output: 1.6331239353195392e+16 false true
 }
 ```
