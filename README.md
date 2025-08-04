@@ -111,3 +111,19 @@ func main() {
 	// NaN 3
 }
 ```
+
+`sin(𝜋) > 0` and no underflow occurs
+```go
+package main
+
+import (
+	"fmt"
+	"math"
+)
+
+func main() {
+	x := math.Sin(math.Pi)
+	fmt.Println(math.Sin(0), x, x == 0, x > math.SmallestNonzeroFloat64)
+	// Output: 0 1.2246467991473515e-16 false true
+}
+```
