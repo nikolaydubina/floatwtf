@@ -127,3 +127,19 @@ func main() {
 	// Output: 0 1.2246467991473515e-16 false true
 }
 ```
+
+`tan(𝜋/2) != +Inf` and no overflow occurs
+```go
+package main
+
+import (
+	"fmt"
+	"math"
+)
+
+func main() {
+	x := math.Tan(math.Pi / 2)
+	fmt.Println(x, x == math.Inf(1), x > math.MaxFloat64)
+	// Output: 1.6331239353195392e+16 false false
+}
+```
