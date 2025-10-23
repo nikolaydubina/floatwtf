@@ -1,6 +1,6 @@
 # float.. wait, what?
 
-> [https://float.exposed](https://float.exposed)
+> ✨ receommended [float.exposed](https://float.exposed)
 
 `144.96 > 144.96`... but also it isn't
 ```go
