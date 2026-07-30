@@ -19,6 +19,8 @@ float -> string finds closest short decimal that is closest to float (only optio
 there are infinite number of decimals that are very close to any float.
 however, for simple numbers (<1B, 3 deicmal points) each decimal has only one closest float, and other nearby floats are closest to distinct decimals.
 
+## wtf
+
 `144.96 > 144.96`... but also it isn't
 ```go
 package main
