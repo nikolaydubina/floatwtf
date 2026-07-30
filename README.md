@@ -13,10 +13,11 @@ string -> float -> string (if no drop of precision was done, such as values <1B 
 
 this works because of deterministic same algorithm forward and backward pass.
 
-string -> float finds closest float to a decimal  
-float -> string finds closest short decimal that is closest to float (only option is the same string that is procuced it)
+string -> float finds closest float to a decimal. there are infinitely many decimals and only fixed number of floats to pick from.
 
-## wait, what?
+float -> string finds closest short decimal that is closest to float (only option is the same string that is procuced it).
+there are infinite number of decimals that are very close to any float.
+however, for simple numbers (<1B, 3 deicmal points) each decimal has only one closest float, and other nearby floats are closest to distinct decimals.
 
 `144.96 > 144.96`... but also it isn't
 ```go
