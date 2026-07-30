@@ -2,6 +2,22 @@
 
 > ✨ we recommend [float.exposed](https://float.exposed)
 
+## this is ok
+
+### string conversion
+
+given same algorithm,
+
+float -> string -> float  
+string -> float -> string (if no drop of precision was done, such as values <1B and less then 3 decimal points)  
+
+this works because of deterministic same algorithm forward and backward pass.
+
+string -> float finds closest float to a decimal  
+float -> string finds closest short decimal that is closest to float (only option is the same string that is procuced it)
+
+## wait, what?
+
 `144.96 > 144.96`... but also it isn't
 ```go
 package main
